@@ -2,7 +2,7 @@
 
 FROM python:3.9.7
 
-WORKDIR /usr/src/fibonacci_API
+WORKDIR /usr/src/fibonacci_api
 
 COPY requirements.txt ./requirements.txt
 
