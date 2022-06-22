@@ -1,4 +1,4 @@
-import fibonacci
+import app.fibonacci as fib
 from fastapi import FastAPI, Path
 
 app = FastAPI()
@@ -9,5 +9,5 @@ async def root():
 
 @app.get("/input/{n}")
 async def get_n(n: int):
-    output_seq = fibonacci.fibo_seq(n)
+    output_seq = fib.fibo_seq(n)
     return {"fibonacci sequence:": output_seq}
